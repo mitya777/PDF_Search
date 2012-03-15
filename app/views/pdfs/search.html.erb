@@ -1,4 +1,3 @@
-<%= Rails.logger.debug "RESULTS: #{@results}" %>
 <%= "#{@doc.name} contains '#{@query}' on the following pages: #{@results[1..-2]}" %>
 <br />
 <%= link_to "Back to Search", @doc %> | <%= link_to "Back to Pdfs", root_path %>
