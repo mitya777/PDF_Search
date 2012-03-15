@@ -11,7 +11,7 @@
 <% @pdfs.each do |pdf| %>
   <tr>
     <td><%= pdf.name %></td>
-    <td><%= link_to 'Show', pdf %></td>
+    <td><%= link_to 'Search', pdf %></td>
     <td><%= link_to 'Edit', edit_pdf_path(pdf) %></td>
     <td><%= link_to 'Destroy', pdf, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
@@ -20,4 +20,4 @@
 
 <br />
 
-<%= link_to 'New Pdf', new_pdf_path %>
+<%= link_to 'Upload Pdf', new_pdf_path %>

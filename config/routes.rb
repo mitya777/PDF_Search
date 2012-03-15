@@ -1,4 +1,5 @@
 PDFSearch::Application.routes.draw do
+  root :to => 'pdfs#index'
   resources :pdfs do
     member do
       get 'search'
