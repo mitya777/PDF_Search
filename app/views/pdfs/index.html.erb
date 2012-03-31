@@ -5,13 +5,15 @@
     <th>Name</th>
     <th></th>
     <th></th>
+    <th></th>
   </tr>
 
 <% @pdfs.each do |pdf| %>
   <tr>
     <td><%= pdf.name %></td>
-    <td><%= link_to 'Search', pdf %></td>
-    <td><%= link_to 'Edit', edit_pdf_path(pdf) %></td>
+    <td><%= link_to 'Search', pdf %>-</td>  
+    <td><%= link_to 'Edit', edit_pdf_path(pdf) %>-</td> 
+    <td><%= link_to 'Delete', pdf, confirm: 'Are you sure you want to delete this pdf?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
